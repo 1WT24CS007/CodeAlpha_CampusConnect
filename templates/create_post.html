@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Post - CampusConnect</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7f8;
+        }
+
+        .navbar {
+            background: #2b8a7a;
+            color: white;
+            padding: 18px 40px;
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .post-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .post-card h2 {
+            margin-top: 0;
+            color: #2b8a7a;
+        }
+
+        .post-card p {
+            color: #666;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #2b8a7a;
+        }
+
+        .post-btn {
+            background: #2b8a7a;
+            color: white;
+            border: none;
+            padding: 11px 25px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            color: #2b8a7a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>CampusConnect 🎓</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="post-card">
+
+            <h2>📝 Create a Post</h2>
+
+            <p>Share something with your campus community.</p>
+
+            <form method="POST">
+                {% csrf_token %}
+
+                <textarea
+                    name="content"
+                    rows="6"
+                    placeholder="What's happening on campus?"
+                    required></textarea>
+
+                <br>
+
+                <button type="submit" class="post-btn">
+                    🚀 Publish Post
+                </button>
+            </form>
+
+            <a href="/home/" class="back-btn">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

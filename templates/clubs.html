@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clubs - CampusConnect</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7f8;
+        }
+
+        .navbar {
+            background: #2b8a7a;
+            color: white;
+            padding: 18px 40px;
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .header-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .clubs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .club-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .club-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .club-icon {
+            font-size: 45px;
+        }
+
+        .club-card h3 {
+            color: #2b8a7a;
+        }
+
+        .club-btn {
+            display: inline-block;
+            background: #2b8a7a;
+            color: white;
+            text-decoration: none;
+            padding: 9px 18px;
+            border-radius: 7px;
+            margin-top: 8px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background: #2b8a7a;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>CampusConnect 🎓</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="header-card">
+            <h2>🎯 Campus Clubs</h2>
+            <p>Explore clubs, discover your interests and connect with other students.</p>
+        </div>
+
+        <div class="clubs">
+
+            <div class="club-card">
+                <div class="club-icon">💻</div>
+                <h3>Coding Club</h3>
+                <p>Learn programming and build exciting projects.</p>
+                <a href="/coding/" class="club-btn">View Club</a>
+            </div>
+
+            <div class="club-card">
+                <div class="club-icon">🎨</div>
+                <h3>Cultural Club</h3>
+                <p>Celebrate creativity, culture and talent.</p>
+                <a href="/cultural/" class="club-btn">View Club</a>
+            </div>
+
+            <div class="club-card">
+                <div class="club-icon">🏏</div>
+                <h3>Sports Club</h3>
+                <p>Participate in sports and stay active.</p>
+                <a href="/sports/" class="club-btn">View Club</a>
+            </div>
+
+            <div class="club-card">
+                <div class="club-icon">📚</div>
+                <h3>Literary Club</h3>
+            <p>Explore writing, reading and communication.</p>
+            <a href="/literary/" class="club-btn">View Club</a>
+        </div>
+
+        <div class="club-card">
+            <div class="club-icon">🤖</div>
+            <h3>Robotics Club</h3>
+            <p>Build, experiment and explore robotics.</p>
+            <a href="/robotics/" class="club-btn">View Club</a>
+        </div>
+
+    </div>
+
+    <a href="/home/" class="back-btn">
+        ← Back to Home
+    </a>
+
+</div>
+
+</body>
+</html>
